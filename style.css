@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+:root {
+  --background: linear-gradient(
+    360deg,
+    rgb(136, 246, 130) 0%,
+    green 41%,
+    rgb(190, 248, 211) 100%
+  );
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  background: var(--background);
+  color: var(--white);
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* open */
+.show-modal {
+  position: relative;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 1.5rem 2rem;
+  border: 1px var white solid;
+  background-color: white;
+  font-weight: bold;
+  border: 0;
+  box-shadow: 1px 1px 100px 0px black;
+  color: var(--white);
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+
+/* close */
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color:white;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+
+
+
+.hidden {
+  display: none;
+  
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 45rem;
+  height: 100%;
+  max-height: 37rem;
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  z-index: 10;
+
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: black;
+  font-family: cursive;
+}
+p {
+  overflow: scroll;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: cursive;
+}
+.click{
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 250px;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+/* hover */
+  .close-modal:hover {
+    transform: rotate(90deg);
+    transition: all ease-in-out 0.3s;
+  }
+  .show-modal:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+  }
+  .click:hover{
+    transition: 0.5s;
+    box-shadow: 1px 1px 15px 1px black ;
+    cursor: pointer;
+   
+  }
+
